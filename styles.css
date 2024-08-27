@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#game-settings {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#game-settings select, #game-settings button {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#game-board {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #3b4049;
+}
+
+.card {
+    width: 100px;
+    height: 140px;
+    background-color: #61dafb;
+    color: #282c34;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card.flipped {
+    background-color: #ffffff;
+    color: #61dafb;
+    cursor: default;
+    transform: none;
+}
+
+#scoreboard {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#leaderboard {
+    padding-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
